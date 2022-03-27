@@ -1,2 +1,3 @@
 # scala-demo
-A project to learn the Scala language
+
+> A project to learn the _Scala_ language
