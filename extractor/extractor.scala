@@ -41,8 +41,8 @@ object Main {
     }
 
     def nameContainsSpecialCharacters(name: String): Boolean = {
-        val numbers = new Regex("[!@#$%^&(){};:<>,.?~/\\[\\]\\*\\+\\^]") findAllIn name
-        numbers.hasNext
+        val nonAlpahabets = new Regex("[^A-Za-z ]") findAllIn name
+        nonAlpahabets.hasNext
     }
 
     def nameContainsNumber(name: String): Boolean = {
