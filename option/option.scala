@@ -9,7 +9,7 @@ case class IntOption(private val value: Int) extends MyOption[Int] {
 object Main {
     def main(args: Array[String]): Unit = {
 
-        if(args.length < 0)
+        if(args.length <= 0)
             return println("Usage: scala option/option.scala 50 (or any other valid integer)")
 
         if(args(0).toIntOption == None) 
