@@ -1,0 +1,1 @@
+println(((x: Int) => s"This is being printed from inside an anonymous function (x: Int) => x + 1: ${x + 1}" )(5))
